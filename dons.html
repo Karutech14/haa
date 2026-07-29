@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faire un Don - Human Aid in Action</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Human Aid <span>in Action</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="projets.html">Nos Projets</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://yembjkyt.mychariow.shop/prd_061tvge9/checkout" class="btn btn-secondary active">Faire un Don</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Faire un Don</h1>
+      <p>Chaque contribution soutient directement nos actions sur le terrain.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Transparence et Impact</h2>
+        <p>Vos dons permettent d'acheter du matériel scolaire, de financer les équipements de nos centres de formation et d'offrir des soins aux familles en situation de précarité.</p>
+        <div style="background: var(--light); padding: 20px; border-radius: 8px; margin-top: 20px;">
+          <h4>Répartition des dons :</h4>
+          <p>• 88% financent directement les programmes terrain.</p>
+          <p>• 12% couvrent l'administration et la logistique.</p>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <form id="donationForm">
+          <h3>Soutenez-nous</h3>
+          <br>
+          <div class="form-group">
+            <label>Mode de Paiement</label>
+            <div class="payment-options">
+              <div class="payment-btn active" data-provider="M-Pesa">M-Pesa</div>
+              <div class="payment-btn" data-provider="Airtel Money">Airtel</div>
+              <div class="payment-btn" data-provider="Orange Money">Orange</div>
+            </div>
+            <input type="hidden" id="selectedProvider" value="M-Pesa">
+          </div>
+
+          <div class="form-group">
+            <label for="amount">Montant du don ($ USD)</label>
+            <input type="number" id="amount" min="1" required placeholder="Ex: 10, 20, 50">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Numéro Téléphone (Mobile Money)</label>
+            <input type="tel" id="phone" required placeholder="+243 ...">
+          </div>
+
+          <button type="submit" class="btn btn-secondary w-100">Valider le don</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Human Aid in Action. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Human Aid in Action</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Human Aid <span>in Action</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="projets.html">Nos Projets</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="dons.html" class="btn btn-secondary">Faire un Don</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Contactez-Nous</h1>
+      <p>Nous sommes à votre écoute pour toute question ou partenariat.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Coordonnées</h2>
+        <p>N'hésitez pas à poser vos questions ou à nous rejoindre en tant que bénévole.</p>
+        <br>
+        <p>📍 <strong>Adresse :</strong> Quartier Mapendo Sud, Rue Tumbula N°10, RDC</p>
+        <p>📞 <strong>Téléphone :</strong> +243 990 380 449</p>
+        <p>✉️ <strong>Email :</strong> humanaidinaction@gmail.com</p>
+      </div>
+
+      <div class="form-container">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Nom Complet</label>
+            <input type="text" id="name" required placeholder="Votre nom">
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse Email</label>
+            <input type="email" id="email" required placeholder="nom@exemple.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Votre Message</label>
+            <textarea id="message" rows="5" required placeholder="Écrivez votre message ici..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Envoyer le message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Human Aid in Action. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
