@@ -475,7 +475,7 @@ h1, h2, h3, h4 {
     padding: 80px 0;
     background: linear-gradient(
 135deg
-, #e67e22 0%, #d35400 100%);
+, #646260 0%, #5a5755 100%);
 }
 .volunteer-card {
     text-align: center;
@@ -508,9 +508,10 @@ h1, h2, h3, h4 {
 }
 
 .news-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+      display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+
     margin-bottom: 40px;
 }
 .news-category {
