@@ -3,12 +3,12 @@
    ========================================================================== */
 
 :root {
-  --primary: #2a7a4c;
-  --primary-hover: #1f5937;
-  --secondary: #e67e22;
-  --secondary-hover: #d35400;
-  --dark: #1e293b;
-  --light: #f8fafc;
+  --primary: #138a72;
+  --primary-hover: #0d6756;
+  --secondary: #1769aa;
+  --secondary-hover: #0f4f82;
+  --dark: #123047;
+  --light: #f0f7f5;
   --white: #ffffff;
   --gray: #64748b;
   --gray-light: #e2e8f0;
@@ -154,7 +154,7 @@ h1, h2, h3, h4 {
   text-align: center;
   color: var(--white);
   /* EMPLACEMENT BACKGROUND IMAGE PAGE HEADER: remplace l'url ci-dessous */
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), var(--primary);
+  background: linear-gradient(rgba(18, 48, 71, 0.82), rgba(19, 138, 114, 0.82)), var(--primary);
 }
 
 .page-header h1 {
@@ -224,6 +224,18 @@ h1, h2, h3, h4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.info-image-slot {
+  height: 360px;
+  background: linear-gradient(135deg, #d9f2ea, #dcecf8);
+  border: 2px dashed var(--primary);
+  color: var(--primary);
+}
+
+.info-image-slot span {
+  padding: 20px;
+  text-align: center;
 }
 
 /* --- ACCUEIL HERO --- */
@@ -400,6 +412,30 @@ h1, h2, h3, h4 {
   color: var(--white);
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-links a:hover {
+  color: #7de0c8;
+}
+
+.social-links i {
+  font-size: 1.15rem;
+}
+
 .footer-bottom {
   text-align: center;
   border-top: 1px solid #334155;
@@ -447,7 +483,7 @@ h1, h2, h3, h4 {
     padding: 0 20px;
 }
 .identity-card {
-    background: #423d3d;
+  background: #123047;
     padding: 40px 30px;
     border-radius: 10px;
     text-align: center;
@@ -473,9 +509,7 @@ h1, h2, h3, h4 {
 }
 .volunteer-cta {
     padding: 80px 0;
-    background: linear-gradient(
-135deg
-, #646260 0%, #5a5755 100%);
+    background: linear-gradient(135deg, #123047 0%, #138a72 100%);
 }
 .volunteer-card {
     text-align: center;
@@ -497,9 +531,9 @@ h1, h2, h3, h4 {
 .history-block {
     margin: 0 auto;
     padding: 40px;
-    background: #9f8d8d;
+    background: #dcecf8;
     border-radius: 10px;
-    border-left: 5px solid #e67e22;
+    border-left: 5px solid var(--secondary);
 }
 .history-block h3 {
     font-size: 2rem;
@@ -518,7 +552,7 @@ h1, h2, h3, h4 {
     position: absolute;
     top: 15px;
     left: 15px;
-    background: #e67e22;
+    background: var(--secondary);
     color: white;
     padding: 5px 12px;
     border-radius: 20px;
@@ -533,7 +567,7 @@ h1, h2, h3, h4 {
 }
 
 .news-link {
-    color: #e67e22;
+    color: var(--secondary);
     text-decoration: none;
     font-weight: 600;
 }
@@ -570,12 +604,12 @@ h1, h2, h3, h4 {
     color: #2c7a4d;
 }
 .team-role {
-    color: #e67e22;
+    color: var(--secondary);
     font-weight: 600;
     margin-bottom: 10px;
 }
 .value-card {
-    background: #797272;
+  background: #e5f2ef;
     padding: 40px 30px;
     border-radius: 10px;
     text-align: center;
